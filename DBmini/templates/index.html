@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>College Event Management System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <style>
         html, body {
             height: 100%; /* Ensure the body takes full height */
@@ -13,10 +16,10 @@
             scroll-behavior: smooth;
         }
         @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
-body {
+html , body {
 	margin: 0;
 	background: #222;
-	font-family: 'Work Sans', sans-serif;
+  font-family: Arial, sans-serif;
 	font-weight: 800;
 }
 
@@ -137,6 +140,7 @@ nav a:hover::before {
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 8px;
+    
     padding: 20px;
     width: 400px;
     text-align: center;
@@ -210,6 +214,33 @@ nav a:hover::before {
             height: 6vh;
             background-color: #242F3B;
         }
+ /* Animated Text */
+ h1 {
+            font-family: "Anton", sans-serif;
+            font-size: 60px;
+            font-weight: 400;
+            color: white;
+            animation: textColorChange 2s infinite alternate;
+        }
+
+        @keyframes textColorChange {
+            0% { color: white; }
+            100% { color: #FF6701; }
+        }
+        h1{
+          font-family: "Anton", sans-serif;
+          font-size: 60px;
+  font-weight: 400;
+  font-style: normal;
+ padding-top: 100px;
+ padding-bottom: 50px;
+        }
+
+        .font1{
+          display: flex;
+          justify-content: center;
+          width: 100vw;
+        }
     </style>
 </head>
 
@@ -223,11 +254,11 @@ nav a:hover::before {
           <nav>
             <ul>
               <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
+              <li><a href="#about.html">About</a></li>
               <nav class="navbar">
                 <ul>
                     <li><a href="#login">LOGIN</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="#contact.html">CONTACT</a></li>
                 </ul>
             </nav>
             </ul>
@@ -238,9 +269,19 @@ nav a:hover::before {
  
 
     <main>
-        <section class="hero">
-            <img src="/static/images/index.jpg" alt="College Events" class="hero-image">
-        </section>
+        <div class="font1">
+
+          <h1>
+            INCTREKS -  A College Event Management System
+           <br>
+           <h2>
+           
+          </h2>
+
+          </h1>
+         
+         
+        </div>
 
         <section id="login" class="login-options">
             <div class="login-card">

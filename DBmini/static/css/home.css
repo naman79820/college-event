@@ -7,7 +7,7 @@ header h1 {
   text-align: left;
   margin-left: 5%;
   color: #f5f9fc; /* Light platinum */
-  font-family: "Fascinate Inline", sans-serif;
+font-family: sans-serif;
   margin-bottom: 0px;
 }
 body {
@@ -90,6 +90,7 @@ img {
 .coverimg {
   border-radius: 0%;
 }
+
 .inner h3 {
   margin-top: 0%;
   color: #ffffff; /* White */
